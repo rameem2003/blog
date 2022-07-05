@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* header */
+header{
+    background-color: #63c8f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 5rem;
+    box-shadow: 0 .5rem 1rem rgba(15, 1, 1, 0.247);
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header #logo{
+    width: 30%;
+}
+
+header #logo a{
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header #menu{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header #menu .nav_menu{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+header #menu .nav_menu li{
+    padding: 0 1.5rem;
+}
+header #menu .nav_menu li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+header #menu .nav_menu li a.active{
+    font-size: 1.5rem;
+}
+
+header #menu .user_login a{
+    width: 40%;
+    padding: 10px 20px;
+    background-color: rgb(0, 4, 255);
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 8px;
+}
+/* header css */
+
+
+
+/* banner */
+#banner{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+#banner .left, #banner .right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#banner .left{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#banner .left h1{
+    font-size: 5rem;
+}
+
+#banner .left h3{
+    font-size: 3rem;
+}
+
+#banner .subcribe{
+    width: 60%;
+    height: 30px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#banner .subcribe input{
+    height: 100%;
+}
+
+#banner .subcribe input[type="email"]{
+    width: 65%;
+    padding: 0 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+    outline: none;
+}
+
+#banner .subcribe input[type="submit"]{
+    width: 30%;
+    font-size: 1rem;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid black;
+    font-weight: bolder;
+}
+
+#banner img{
+    max-width: 100%;
+}
+/* banner end */
+
+
+
+/* blog */
+#blog_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#blog_section main{
+    width: 60%;
+    padding-right: 1.5rem;
+}
+
+#blog_section main .blog{
+    padding: 20px;
+    border: 2px solid black;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+#blog_section main .blog .blog-thumb{
+    max-width: 100%;
+    padding: 20px;
+    background-color: #ddd;
+    border-radius: 8px;
+}
+
+#blog_section main .blog img{
+    width: 100%;
+}
+#blog_section main .blog .blog-title{
+    margin: 2rem 0;
+}
+
+#blog_section .blog-time{
+    margin: 8px 0;
+}
+
+#blog_section .blog-time > span{
+    background-color: blue;
+    padding: 5px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+#blog_section main .blog .blog-text p{
+    text-align: justify;
+}
+
+#blog_section main .blog .blog-text a{
+    display: block;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: green;
+}
+
+#blog_section .asside{
+    width: 40%;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+#blog_section .asside .side-blog{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+#blog_section .asside .side-blog .left{
+    width: 25%;
+}
+
+#blog_section .asside .side-blog .left img{
+    max-width: 80%;
+    border-radius: 50%;
+}
+
+#blog_section .asside .side-blog .right{
+    width: 75%;
+}
+
+/* blog end */
+
+
+/* footer */
+footer{
+    background-color: #282C2F;
+    color: white;
+    padding: 30px 0;
+}
+
+footer .container{
+    display: block;
+}
+
+
+footer .containt{
+    display: flex;
+}
+
+
+
+footer .footer-box{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-box h4{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+footer .containt .footer-box:nth-child(1){
+    width: 40%;
+}
+
+
+footer .containt .footer-box:nth-child(2){
+    width: 30%;
+}
+
+footer .containt .footer-box:nth-child(3){
+    width: 30%;
+}
+
+footer .footer-box .brand_name .social_links{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+footer .footer-box .brand_name .social_links a:first-child{
+    margin-left: 0;
+}
+
+footer .footer-box .brand_name .social_links a{
+    margin: 0 1rem;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    /* border: 2px solid white; */
+    border-radius: 5px;
+    background-color: #3f4447;
+}
+
+footer .footer-box ul{
+    list-style-type: none;
+}
+
+footer .footer-box ul li{
+    margin: 1rem 0;
+}
+
+footer .footer-box ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .footer-box iframe{
+    padding: 10px;
+    background-color: #3f4447;
+}
+
+
+footer .developer{
+    text-align: center;
+}
+/* footer end */
