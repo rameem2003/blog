@@ -36,7 +36,7 @@ form .login_sign_up a{
 }
 
 form .login_sign_up a.active{
-    background-color: rgba(89, 255, 47, 0.562);
+    background-color: #63C8F0;
 }
 
 form .input_group input{
@@ -84,10 +84,15 @@ form .social_link a i{
 
 
 form .submit_btn{
-    background-color: rgba(89, 255, 47, 0.562);
+    background-color: #63C8F0;
     cursor: pointer;
 }
 
 form .submit_btn:hover{
-    background-color: rgba(53, 214, 13, 0.979);
+    background-color: #1ab6f3;
+}
+
+
+form .backBtn{
+    margin-top: 20px;
 }
